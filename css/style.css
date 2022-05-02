@@ -394,14 +394,14 @@ body {
 }
 
 .comics {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(../Multimedia/comics.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/comics.jpg);
     background-size: 100% ;
     background-repeat: no-repeat;
     object-fit: contain;
 }
 
 .manga {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(../Multimedia/manga.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/manga.jpg);
     background-size: 100% ;
     background-repeat: no-repeat;
     object-fit: contain;
@@ -409,14 +409,21 @@ body {
 }
 
 .extranjera {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(../Multimedia/libro-1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/libro-1.jpg);
     background-size: 100% ;
     background-repeat: no-repeat;
     object-fit: contain;
     background-position: center;
 }
-
-
+.extranjera:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/libro-1.jpg);
+}
+.manga:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/manga.jpg);
+}
+.comics:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/comics.jpg);
+}
 /*--------CONTACTO-------*/
 
 .contacto-contenedor {
@@ -453,14 +460,10 @@ body {
 
 /*------------------------LITERATURA EXTRANJERA-----------------------*/
 
-.fotos-extranjero {
-    height: 200vh;
-    width: auto;
-}
 
 .fotos-extranjero div {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
