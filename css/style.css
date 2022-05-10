@@ -22,7 +22,7 @@ body {
 }
 
 /*-------HEADER/NAV-------*/
-
+/*
 .header-contenedor {
     grid-area: header;
     background-color: #A6B1E1;
@@ -41,8 +41,6 @@ body {
     align-items: center;
     padding: 10px;
     width: 100%;
-
-
 }
 
 .header-contenedor nav ul {
@@ -69,7 +67,23 @@ body {
     color: #424874;
     text-shadow: none;
 }
+*/
+.color-menu {
+    background-color:#DCD6F7;
+    object-fit: cover;
+}
 
+.d-i:hover{
+    background-color: #424874;
+    color: #DCD6F7;
+}
+
+.d-i:hover{
+color:#DCD6F7;
+}
+.bg-color {
+    background-color: #A6B1E1;
+}
 /*--------MAIN-------*/
 .main-contenedor {
     grid-area: main;
@@ -83,14 +97,16 @@ body {
 /*--------SECTION HERO-------*/
 .hero {
     width: 100%;
-    height: 70vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/hojas.jpg);
+    height: 120vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/biblioteca.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: #F4EEFF;
+    background-attachment: fixed;
+
 }
 
 .hero h1 {
@@ -216,8 +232,9 @@ body {
     font-family: 'Rubik', sans-serif;
     width: 100%;
     height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/biblioteca.jpg);
-    background-size: cover;
+   /* background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/biblioteca.jpg);
+   */ 
+   background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,13 +292,18 @@ body {
 }
 
 .footer-contenedor .logo {
-    width: 60px;
+    width: 40px;
     height: auto;
+    margin-left: 20px;
 }
 
+.footer-contenedor div {
+    margin-right: 30px;
+}
 .footer-contenedor div img {
     width: 50px;
     height: auto;
+
 }
 
 .footer-contenedor ul {
@@ -302,7 +324,7 @@ body {
 }
 
 
-/*--------------------------------Acerca-----------------------------*/
+/*--------------------------------ACERCA---------------------------------*/
 
 .seccion-presentacion {
     display: flex;
@@ -339,14 +361,10 @@ body {
     object-fit: cover;
 }
 
-
-
-
 /*----------------------------CATEGORIAS 2.0-----------------------*/
 .seccion-categoria{
     width: 100%;
-    height: auto;
-    
+    height: auto;  
 }
 .todas-categorias {
     width: 100%;
@@ -359,6 +377,7 @@ body {
     font-size: 40px;
     margin-top: 40px;
     margin-bottom: 30px;
+    padding-top: 40px;
 }
 
 .todas-categorias {
@@ -369,14 +388,12 @@ body {
     width: auto;
     height: 150vh;
     margin-bottom: 30px;
-   
 }
 
 .todas-categorias .fotos-libros {
     background-color: #F4EEFF;
     width: 100%;
     height: 110px;
-   
 }
 
 .todas-categorias a {
@@ -415,6 +432,39 @@ body {
     object-fit: contain;
     background-position: center;
 }
+
+.argentina {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/argentina.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+}
+
+.latinoamericana {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/latinoamericana.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+}
+
+.idiomas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/3xm0oiaj8pb71.webp);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center;
+}
+
+.filosofia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/filo.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position:14% 25%;
+
+}
 .extranjera:hover{
     background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/libro-1.jpg);
 }
@@ -424,8 +474,21 @@ body {
 .comics:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/comics.jpg);
 }
-/*--------CONTACTO-------*/
+.argentina:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/argentina.jpg);
+}
+.latinoamericana:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/latinoamericana.jpg);
+}
+.idiomas:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/3xm0oiaj8pb71.webp);
+}
+.filosofia:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/filo.jpg);
 
+}
+/*--------CONTACTO-------*/
+/*
 .contacto-contenedor {
     display: flex;
     justify-content: flex-start;
@@ -457,7 +520,35 @@ body {
 .contacto-contenedor div iframe {
     margin: 10px;
 }
+*/
 
+
+.contacto{
+  background-color:#DCD6F7;
+    width: 100%;
+}
+
+.enviar{
+    width: 25%;
+    background-color:#DCD6F7;
+    border: #424874 2px solid;
+    color: #424874;
+    margin-left: 37%
+}
+.enviar:hover{
+    background-color: #A6B1E1;
+    border-color: #424874;
+    color: #DCD6F7;
+}
+
+.contacto h1 {
+    text-align: center;
+    color: #424874;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
 /*------------------------LITERATURA EXTRANJERA-----------------------*/
 
 
@@ -716,8 +807,9 @@ body {
     .seccion-presentacion div p {
         font-size: 15px;
     }
-
+/*
     /*--------------MEDIA-CONTACTO-----------*/
+    /*
     .contacto-contenedor div h1 {
         font-size: 20px;
     }
@@ -731,7 +823,7 @@ body {
         width: 60vh;
         height: 60vh;
     }
-
+*/
 }
 
 @media screen and (max-width:400px) {
