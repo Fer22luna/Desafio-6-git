@@ -232,14 +232,12 @@ color:#DCD6F7;
     font-family: 'Rubik', sans-serif;
     width: 100%;
     height: 50vh;
-   /* background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/biblioteca.jpg);
-   */ 
    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #F4EEFF;
+    color:#424874;
     background-attachment: fixed;
     margin-top: 50px;
 }
@@ -549,6 +547,11 @@ color:#DCD6F7;
     margin-bottom: 30px;
     padding-top: 40px;
 }
+ion-icon {
+    color:#424874;
+  }
+
+
 /*------------------------LITERATURA EXTRANJERA-----------------------*/
 
 
