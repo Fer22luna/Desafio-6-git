@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-coder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fer22luna/Desafio-6-git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fer22luna/Desafio-6-git/issues"
+  },
+  "homepage": "https://github.com/Fer22luna/Desafio-6-git#readme",
+  "description": ""
+}

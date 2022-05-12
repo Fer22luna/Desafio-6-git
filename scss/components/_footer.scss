@@ -1,0 +1,46 @@
+.footer-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:nth($colores, 2 ) ;
+    grid-area: footer;
+
+    a {
+        .logo {
+            width: 40px;
+            height: auto;
+            margin-left: 20px;
+        }
+    }
+
+    ul {
+        list-style: none;
+        li {
+            a {
+                text-decoration: none;
+                color: nth($colores, 1 );
+                font-weight: lighter;
+                text-transform: none;
+                text-shadow: 2px 2px 2px nth($colores, 3 );
+                &:hover{
+                    color: nth($colores, 3 );
+                    text-shadow: none;
+                }
+            }
+        }
+
+    }
+
+    div {
+        margin-right: 30px;
+
+        a {
+            img {    
+                width: 50px;
+                height: auto;
+            }
+        }
+
+    }
+}

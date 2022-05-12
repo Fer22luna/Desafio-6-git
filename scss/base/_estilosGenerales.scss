@@ -1,0 +1,31 @@
+@import './listas';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+        .grid-contenedor {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.3fr auto auto;
+            grid-template-areas:
+                "header header header"
+                "main main main"
+                "footer footer footer";
+            .main-contenedor{
+                grid-area: main;
+                background-color: nth($colores, 1 );
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+
+            }
+        }
+
+    }
+
