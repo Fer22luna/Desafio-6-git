@@ -1,4 +1,5 @@
 @import './listas';
+@import './mixin';
 
 * {
     margin: 0;
@@ -19,13 +20,9 @@ body {
             .main-contenedor{
                 grid-area: main;
                 background-color: nth($colores, 1 );
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include flex (flex,space-between,center);
                 flex-direction: column;
-
             }
         }
-
     }
 

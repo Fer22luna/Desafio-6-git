@@ -1,7 +1,5 @@
 .footer-contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (flex,space-between,center);
     padding: 10px;
     background-color:nth($colores, 2 ) ;
     grid-area: footer;
