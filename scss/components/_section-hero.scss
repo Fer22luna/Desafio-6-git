@@ -6,11 +6,6 @@
     height: 120vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/biblioteca.jpg);
     background-size: cover;
-    /*
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    */
     @include flex (flex,center,center);
     flex-direction: column;
     color: nth($colores, 1 );
