@@ -1,19 +1,66 @@
-
-
-
 .contacto {
-    h1{
+    background-color: nth($colores, 1);
+    width: 100%;
+    height: auto;
 
+    h1 {
+        text-align: center;
+        color: nth($colores, 3);
+        font-size: 40px;
+        margin-bottom: 30px;
+        margin-top: 60px;
+        padding-top: 100px;
     }
-    div{
-        div{
-            iframe{
+    div {
+        div {}
 
+        .datos {
+            .datos-generales {
+                .icono-parrafo {
+                    
+                      display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+
+                    ion-icon {
+                        color: nth($colores, 3 );
+                    }
+
+                    p {
+                        padding-left: 10px;
+                        margin-top: 5px;
+
+                    }
+                }
             }
         }
-        .datos{
-            .datos-generales
 
+        div {
+            div {}
+
+            div {}
+        }
+
+        div {
+            .texto-area {
+               /* resize: none;*/
+               /* min-height: 200px;*/
+            }
+        }
+
+        .enviar {
+            width: 25%;
+            background-color: nth($colores, 1 );
+            border: nth($colores, 3 ) 2px solid;
+            color: nth($colores, 3 );
+            margin-left: 37%;
+
+            &:hover {
+                background-color: nth($colores, 2 );
+                border-color: nth($colores, 3 );
+                color: nth($colores, 1 );
+            }
         }
     }
+
 }

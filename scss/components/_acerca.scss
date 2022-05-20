@@ -1,9 +1,20 @@
 .main-contenedor {
-    background-color: nth($colores, 1 );
   
     .seccion-presentacion {
         width: 80%;
         height: 120vh;
+
+        @media screen and (max-width:680px) {
+            height: 155vh;
+
+        }
+        @media screen and (max-width:450px) {
+            height: 170vh;
+            width: 100%;
+            background-color: nth($colores, 3 );
+        }
+
+
        
         /*background-color: nth($colores, 1);*/
         .centro-presentacion {
@@ -13,13 +24,23 @@
             margin-top: 30vh;
             margin-bottom: 30vh;
             
+            @media screen and (max-width:680px) {
+                flex-direction: column;
+                height: auto;
 
-            
+            }
+
             img {
                 width: 300px;
                 height: 300px;
                 margin: 50px;
                 border: 10px nth($colores, 4 ) solid;
+            
+                @media screen and (max-width:850px) {
+                    margin: 20px;
+
+                }
+
             }
 
             div {
@@ -31,14 +52,28 @@
                 height: auto;
                 margin-left: 45px;
                 margin-right: 95px;
-            
+
+                @media screen and (max-width:900px) {
+                    margin-left: 0;
+                    margin-right: 30px;
+                }
+                @media screen and (max-width:680px) {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
 
                 p {
                     text-align: justify;
                     font-weight: lighter;
                     line-height: 30px;
-                    font-size: 20px;
+                    font-size: 15px;
                     letter-spacing: normal;
+
+                    @media screen and (max-width:1100px) {
+                        line-height: 20px;
+                        font-size: 10px;
+
+                    }
     
                 }
 
@@ -47,7 +82,17 @@
                     font-weight: bold;
                     padding-bottom: 30px;
                     border-top: 20px;
+
+                    @media screen and (max-width:1100px) {
+                        font-size: 20px;
+                        font-weight: bold;
+                        padding-bottom: 20px;
+                        border-top: 10px;
+                        text-align: center;
+
+                    }
                 }
+
                 a { font-weight: lighter;
                     font-size: 16px;
                     color: nth($colores , 3);
@@ -58,8 +103,13 @@
                     border-radius: 5px;
                     border: nth($colores , 2) solid 1px;
                 
+                    @media screen and (max-width:680px) {
+                        margin-bottom: 15px;
+        
+                    }
+
                     &:hover{
-                        border: nth($colores , 3) solid 2px;
+                        border: nth($colores , 3) solid 1px;
                         color: nth($colores , 3);
                         font-weight: bolder;
                     }

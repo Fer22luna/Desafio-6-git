@@ -3,7 +3,7 @@
 
     h2 {
         font-family: 'Rubik', sans-serif;
-        font-size: 50px;
+        font-size: 40px;
         color: nth($colores , 3);
         font-weight: bold;
         text-align: center;
@@ -23,7 +23,7 @@
             @include flex (flex,space-between,center);
             flex-direction: column;
             margin: 10px;
-            background-color: nth($colores , 1 );
+            background-color: nth($colores , 4 );
             box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.50);
             -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.50);
             -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.50);

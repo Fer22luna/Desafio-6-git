@@ -77,9 +77,8 @@
             }
 
             a {
-                width: 80%;
-                text-decoration: none;
-                display: flex;
+                @extend %a-categoria;
+
                 .argentina {
                     background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/argentina.jpg);
                     background-size: 100% ;

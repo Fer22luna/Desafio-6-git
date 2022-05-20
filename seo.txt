@@ -1,0 +1,12 @@
+
+
+title --> 35 caracteres.
+Jerarquia de las headings.
+Mayor enlaces internos que externos.
+ponerle title al iframe
+
+alt en las imagenes.
+
+ <meta name="description" content="180 caracteres ideal">
+
+ agregado open graph
