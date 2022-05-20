@@ -44,6 +44,22 @@ body .grid-contenedor .main-contenedor {
   display: flex;
 }
 
+.main-contenedor .seccion-categoria .todas-categorias a .manga, .main-contenedor .seccion-categoria .todas-categorias a .comics, .main-contenedor .seccion-categoria .todas-categorias a .idiomas, .main-contenedor .seccion-categoria .todas-categorias a .filosofia, .main-contenedor .seccion-categoria .todas-categorias a .argentina, .main-contenedor .seccion-categoria .todas-categorias a .latinoamericana, .main-contenedor .seccion-categoria .todas-categorias a .extranjera {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.main-contenedor .seccion-categoria .todas-categorias .fotos-libros, .main-contenedor .seccion-categoria .todas-categorias a .fotos-libros {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #F4EEFF;
+}
+
 header nav {
   background-color: #A6B1E1;
   height: 17vh;
@@ -445,174 +461,54 @@ header nav div div ul .li-drop .color-menu li .d-i:hover {
   height: 150vh;
   margin-bottom: 30px;
 }
-.main-contenedor .seccion-categoria .todas-categorias a {
-  width: 80%;
-  text-decoration: none;
-  display: flex;
-}
 .main-contenedor .seccion-categoria .todas-categorias a .extranjera {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/libro-1.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  object-fit: contain;
   background-position: center;
 }
 .main-contenedor .seccion-categoria .todas-categorias a .extranjera:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/libro-1.jpg);
 }
-.main-contenedor .seccion-categoria .todas-categorias a .fotos-libros {
-  background-color: #F4EEFF;
-  width: 100%;
-  height: 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #F4EEFF;
-}
-.main-contenedor .seccion-categoria .todas-categorias a {
-  width: 80%;
-  text-decoration: none;
-  display: flex;
-}
 .main-contenedor .seccion-categoria .todas-categorias a .latinoamericana {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/latinoamericana.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  object-fit: contain;
   background-position: center;
 }
 .main-contenedor .seccion-categoria .todas-categorias a .latinoamericana:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/latinoamericana.jpg);
 }
-.main-contenedor .seccion-categoria .todas-categorias a .fotos-libros {
-  background-color: #F4EEFF;
-  width: 100%;
-  height: 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #F4EEFF;
-}
 .main-contenedor .seccion-categoria .todas-categorias a .argentina {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/argentina.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  object-fit: contain;
   background-position: center;
 }
 .main-contenedor .seccion-categoria .todas-categorias a .argentina:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/argentina.jpg);
 }
-.main-contenedor .seccion-categoria .todas-categorias a .fotos-libros {
-  background-color: #F4EEFF;
-  width: 100%;
-  height: 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #F4EEFF;
-}
-.main-contenedor .seccion-categoria .todas-categorias a {
-  width: 80%;
-  text-decoration: none;
-  display: flex;
-}
 .main-contenedor .seccion-categoria .todas-categorias a .filosofia {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/filo.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  object-fit: contain;
   background-position: 14% 25%;
 }
 .main-contenedor .seccion-categoria .todas-categorias a .filosofia:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/filo.jpg);
 }
-.main-contenedor .seccion-categoria .todas-categorias a .fotos-libros {
-  background-color: #F4EEFF;
-  width: 100%;
-  height: 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #F4EEFF;
-}
-.main-contenedor .seccion-categoria .todas-categorias a {
-  width: 80%;
-  text-decoration: none;
-  display: flex;
-}
 .main-contenedor .seccion-categoria .todas-categorias a .idiomas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/3xm0oiaj8pb71.webp);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  object-fit: contain;
   background-position: center;
 }
 .main-contenedor .seccion-categoria .todas-categorias a .idiomas:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/3xm0oiaj8pb71.webp);
 }
-.main-contenedor .seccion-categoria .todas-categorias a .fotos-libros {
-  background-color: #F4EEFF;
-  width: 100%;
-  height: 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #F4EEFF;
-}
-.main-contenedor .seccion-categoria .todas-categorias a {
-  width: 80%;
-  text-decoration: none;
-  display: flex;
-}
 .main-contenedor .seccion-categoria .todas-categorias a .comics {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/comics.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  object-fit: contain;
 }
 .main-contenedor .seccion-categoria .todas-categorias a .comics:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/comics.jpg);
 }
-.main-contenedor .seccion-categoria .todas-categorias a .fotos-libros {
-  width: 100%;
-  height: 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #F4EEFF;
-}
-.main-contenedor .seccion-categoria .todas-categorias a {
-  width: 80%;
-  text-decoration: none;
-  display: flex;
-}
 .main-contenedor .seccion-categoria .todas-categorias a .manga {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/manga.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  object-fit: contain;
   background-position: center;
 }
 .main-contenedor .seccion-categoria .todas-categorias a .manga:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/manga.jpg);
 }
-.main-contenedor .seccion-categoria .todas-categorias .fotos-libros {
-  width: 100%;
-  height: 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #F4EEFF;
-}
-
 .main-contenedor .fotos-extranjero {
   background-color: #DCD6F7;
 }

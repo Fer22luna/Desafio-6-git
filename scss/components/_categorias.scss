@@ -4,74 +4,57 @@
         height: auto;
 
         h1 {
-            text-align: center;
-            color: #424874;
-            font-size: 40px;
-            margin-bottom: 30px;
-            margin-top: 60px;
-            padding-top: 100px;
+            text-align: map-get($h1, text-a );
+            color: nth($colores, 3 );
+            font-size: map-get($h1, fs );
+            margin-bottom:  map-get($h1, mb );
+            margin-top:  map-get($h1, mt );
+            padding-top:  map-get($h1, pt );
+
         }
 
-        .todas-categorias { 
+        .todas-categorias {
             width: 100%;
             height: auto;
-            @include flex (flex,space-evenly,center);
+            @include flex (flex, space-evenly, center);
             flex-direction: column;
             width: auto;
             height: 150vh;
             margin-bottom: 30px;
 
             a {
-                width: 80%;
-                text-decoration: none;
-                display: flex;
+                @extend %a-categoria;
+
                 .extranjera {
                     background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/libro-1.jpg);
-                    background-size: 100% ;
-                    background-repeat: no-repeat;
-                    object-fit: contain;
+                    @extend %bg-property;
                     background-position: center;
-                    &:hover{
+
+                    &:hover {
                         background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/libro-1.jpg);
                     }
                 }
-                    
-                .fotos-libros{
-                    background-color: #F4EEFF;
-                    width: 100%;
-                    height: 110px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 30px;
-                    color: #F4EEFF;
 
+                .fotos-libros {
+                    @extend %div-foto;
                 }
             }
 
             a {
-                width: 80%;
-                text-decoration: none;
-                display: flex;
+                @extend %a-categoria;
+
                 .latinoamericana {
                     background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/latinoamericana.jpg);
-                    background-size: 100% ;
-                    background-repeat: no-repeat;
-                    object-fit: contain;
+                    @extend %bg-property;
                     background-position: center;
-                    &:hover{
+
+                    &:hover {
                         background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/latinoamericana.jpg);
                     }
                 }
-                .fotos-libros{
-                    background-color: #F4EEFF;
-                    width: 100%;
-                    height: 110px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 30px;
-                    color: #F4EEFF;
+
+                .fotos-libros {
+                    @extend %div-foto;
 
                 }
             }
@@ -81,133 +64,93 @@
 
                 .argentina {
                     background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/argentina.jpg);
-                    background-size: 100% ;
-                    background-repeat: no-repeat;
-                    object-fit: contain;
+                    @extend %bg-property;
                     background-position: center;
-                    &:hover{
+
+                    &:hover {
                         background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/argentina.jpg);
                     }
                 }
-                .fotos-libros{
-                    background-color: #F4EEFF;
-                    width: 100%;
-                    height: 110px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 30px;
-                    color: #F4EEFF;
+
+                .fotos-libros {
+                    @extend %div-foto;
 
                 }
             }
 
             a {
-                width: 80%;
-                text-decoration: none;
-                display: flex;
+                @extend %a-categoria;
+
                 .filosofia {
                     background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/filo.jpg);
-    background-size: 100% ;
-    background-repeat: no-repeat;
-    object-fit: contain;
-    background-position:14% 25%;
-                    &:hover{
+                    @extend %bg-property;
+                    background-position: 14% 25%;
+
+                    &:hover {
                         background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/filo.jpg);
                     }
                 }
-                .fotos-libros{
-                    background-color: #F4EEFF;
-                    width: 100%;
-                    height: 110px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 30px;
-                    color: #F4EEFF;
+
+                .fotos-libros {
+                    @extend %div-foto;
 
                 }
             }
 
             a {
-                width: 80%;
-                text-decoration: none;
-                display: flex;
-                .idiomas{
+                @extend %a-categoria;
+
+                .idiomas {
                     background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/3xm0oiaj8pb71.webp);
-                    background-size: 100% ;
-                    background-repeat: no-repeat;
-                    object-fit: contain;
+                    @extend %bg-property;
                     background-position: center;
-                    &:hover{
+
+                    &:hover {
                         background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/3xm0oiaj8pb71.webp);
 
                     }
                 }
-                .fotos-libros{
-                    background-color: #F4EEFF;
-                    width: 100%;
-                    height: 110px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 30px;
-                    color: #F4EEFF;
 
+                .fotos-libros {
+                    @extend %div-foto;
                 }
             }
 
             a {
-                width: 80%;
-                text-decoration: none;
-                display: flex;
+                @extend %a-categoria;
+
                 .comics {
                     background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/comics.jpg);
-                    background-size: 100% ;
-                    background-repeat: no-repeat;
-                    object-fit: contain;
-                    &:hover{
+                    @extend %bg-property;
+
+                    &:hover {
                         background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/comics.jpg);
                     }
                 }
-                .fotos-libros{
-                    width: 100%;
-                    height: 110px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 30px;
-                    color: #F4EEFF;
 
+                .fotos-libros {
+                    @extend %div-foto;
                 }
             }
 
             a {
-                width: 80%;
-                text-decoration: none;
-                display: flex;
+                @extend %a-categoria;
+
                 .manga {
                     background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/manga.jpg);
-                    background-size: 100% ;
-                    background-repeat: no-repeat;
-                    object-fit: contain;
+                    @extend %bg-property;
                     background-position: center;
-                    &:hover{
+
+                    &:hover {
                         background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/manga.jpg);
                     }
                 }
 
-                }
-                .fotos-libros{
-                    width: 100%;
-                    height: 110px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 30px;
-                    color: #F4EEFF;
+            }
 
-                }
+            .fotos-libros {
+                @extend %div-foto;
             }
         }
     }
+}
