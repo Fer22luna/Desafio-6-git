@@ -1,55 +1,32 @@
 
-
 .main-contenedor{
 
-    .fotos-extranjero {
-        background-color: nth($colores, 1 );
-        h1 {
-            font-weight: lighter;
-            font-size: 40px;
-            color: nth($colores, 3 ) ;
-            text-align: center;
-            margin-bottom: 30px;
-            margin-top: 70px;
-            padding-top:80px;
-
-        }
-
-        div {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-
-            .fotos-libros {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                img {
-                    max-width: 250px;
-                    height: 300px;
-                    object-fit: cover;
-                    margin: 20px;
-                }
-                a{
-                    text-decoration: none;
-                    background-color: #DCD6F7;
-                    border: #424874 2px solid;
-                    color: #424874;
-                    padding:12px 15px 12px 15px;
-                    border-radius: 5px;
-                        &:hover {
-                            background-color: #A6B1E1;
-                            border-color: #424874;
-                            color: #DCD6F7;
-                        }
-                }
-        
+        .fotos-extranjero{
+            background-color: nth($colores, 1 );
+            h1{
+                font-weight: lighter;
+                font-size: 40px;
+                color: nth($colores, 1);
+                text-align: center;
+                margin-bottom: 30px;
+                margin-top: 70px;
+                padding-top: 80px;
             }
+            .cartas{
+              .card{
+                border:nth($colores, 3 ) 3px solid ;
 
+                  div{
+                      button{
+                    width: auto;
+                    font-size: auto;
+                    background-color: nth($colores, 3 );
+                    border: nth($colores, 3 ) 2px solid;
+                    color: nth($colores, 1 );
+                      }
+                  }
+              }
+            }
+            
         }
     }
-}
-
-

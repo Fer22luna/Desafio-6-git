@@ -1,0 +1,154 @@
+@import '../base/listas';
+
+main{
+.hero {
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/biblioteca.jpg);
+    background-size: cover;
+    @include flex (flex,center,center);
+    flex-direction: column;
+    color: nth($colores, 1 );
+    background-attachment: fixed;
+
+    h1 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 90px;
+        font-weight: bolder;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    div {
+      /*  display: flex;
+        justify-content: center;
+        align-items: center; */
+        @include flex (flex,center,center);
+        flex-direction: row;
+        width: 100%;
+
+        input {
+            width: 40%;
+            height: 100%;
+            border-radius: 5px;
+            outline: none;
+            color: nth($colores , 2);
+            background-color:nth($colores , 1) ;
+
+            &:hover {
+                border-color: nth($colores, 1 );
+            }
+        }
+
+        button {
+            background-color: nth($colores , 1);
+            width: 8%;
+            height: 35px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+            border-radius: 5px;
+        }
+    }
+
+}
+
+.novedades {
+    width: 100%;
+    height: auto;
+
+    h2 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 40px;
+        color: nth($colores , 3);
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        text-decoration: none;
+    }
+    .cartas{
+        .card-body{
+
+            p{
+                text-align: justify;
+            }
+           
+        }
+        button{ 
+            width: auto;
+            font-size: auto;
+            background-color: white;
+            border: nth($colores, 3 ) 2px solid;
+            color: nth($colores, 3 );
+
+       
+
+
+            &:hover {
+                background-color: nth($colores, 3 );
+                color: nth($colores, 5 );
+            }
+
+    }
+
+
+    }
+
+
+}
+
+
+.compra-venta{
+    font-family: 'Rubik', sans-serif;
+    width: 80%;
+    height: auto;
+    @include flex (flex,center,center);
+    flex-direction: column;
+    color: nth($colores, 5 );
+    margin-top: 50px;
+  background-color: nth($colores, 3 );
+
+    div{
+          h2{
+        font-size: 55px;
+        font-weight: bold;
+        text-align: center;
+    }
+        p{ font-size: 38px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+
+    }
+        }
+    a{font-family: 'Rubik', sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+        color: nth($colores, 3 );
+        background-color: nth($colores, 2 );
+        text-decoration: none;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        border: nth($colores, 1 ) solid 2px;
+        transition: all 2s;
+        &:hover{
+            color: nth($colores , 3);
+            background-color: nth($colores , 5);
+            transform: scale(1.3);
+            transition: all 2s;
+        }
+ 
+       }
+}
+}

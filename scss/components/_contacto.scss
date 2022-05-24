@@ -12,10 +12,19 @@
         padding-top: 100px;
     }
     div {
-        div {}
+        div {
+        /*   iframe
+              /* border: solid 10px nth($colores, 3 );
+               border-radius: 5px; */
 
+           
+
+        }
         .datos {
+           
             .datos-generales {
+
+               
                 .icono-parrafo {
                     
                       display: flex;
@@ -43,20 +52,23 @@
 
         div {
             .texto-area {
-               /* resize: none;*/
+                resize: none;
                /* min-height: 200px;*/
             }
         }
 
         .enviar {
-            width: 25%;
+            width: auto;
+            font-size: auto;
             background-color: nth($colores, 1 );
             border: nth($colores, 3 ) 2px solid;
             color: nth($colores, 3 );
+            /*
             margin-left: 37%;
-
+            margin-right: 37%;
+*/
             &:hover {
-                background-color: nth($colores, 2 );
+                background-color: nth($colores, 3 );
                 border-color: nth($colores, 3 );
                 color: nth($colores, 1 );
             }

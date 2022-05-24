@@ -26,12 +26,12 @@
                 @extend %a-categoria;
 
                 .extranjera {
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/libro-1.jpg);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/libro1.jpg);
                     @extend %bg-property;
                     background-position: center;
 
                     &:hover {
-                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/libro-1.jpg);
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/libro1.jpg);
                     }
                 }
 
@@ -101,12 +101,12 @@
                 @extend %a-categoria;
 
                 .idiomas {
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/3xm0oiaj8pb71.webp);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/tales.webp);
                     @extend %bg-property;
                     background-position: center;
 
                     &:hover {
-                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/3xm0oiaj8pb71.webp);
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/tales.webp);
 
                     }
                 }

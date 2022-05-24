@@ -19,7 +19,7 @@ body {
                 "footer footer footer";
             .main-contenedor{
                 grid-area: main;
-                background-color: nth($colores, 5 );
+                background-color: nth($colores, 1 );
                 @include flex (flex,space-between,center);
                 flex-direction: column;
             }

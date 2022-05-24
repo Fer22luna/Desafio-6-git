@@ -1,5 +1,5 @@
 .main-contenedor {
-  
+    
     .seccion-presentacion {
         width: 80%;
         height: 120vh;
@@ -16,7 +16,7 @@
 
 
        
-        /*background-color: nth($colores, 1);*/
+        background-color: nth($colores, 1);
         .centro-presentacion {
             @include flex (flex, center, center);
             height: 60%;
