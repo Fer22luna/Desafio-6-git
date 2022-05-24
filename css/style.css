@@ -492,7 +492,7 @@ main .compra-venta a:hover {
   padding-top: 80px;
 }
 .main-contenedor .fotos-extranjero .cartas .card {
-  border: #424874 3px solid;
+  border: #424874 10px solid;
 }
 .main-contenedor .fotos-extranjero .cartas .card div button {
   width: auto;
