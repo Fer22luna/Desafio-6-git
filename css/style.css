@@ -114,9 +114,6 @@ main .hero h2 {
   }
 }
 main .hero div {
-  /*  display: flex;
-    justify-content: center;
-    align-items: center; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,11 +377,6 @@ main .compra-venta a:hover {
   margin-bottom: 30px;
   margin-top: 60px;
   padding-top: 100px;
-}
-.contacto div div {
-  /*   iframe
-        /* border: solid 10px nth($colores, 3 );
-         border-radius: 5px; */
 }
 .contacto div .datos .datos-generales .icono-parrafo {
   display: flex;

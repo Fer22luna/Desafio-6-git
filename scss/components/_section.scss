@@ -36,9 +36,7 @@ main{
     }
 
     div {
-      /*  display: flex;
-        justify-content: center;
-        align-items: center; */
+
         @include flex (flex,center,center);
         flex-direction: row;
         width: 100%;
@@ -95,7 +93,7 @@ main{
         button{ 
             width: auto;
             font-size: auto;
-            background-color: white;
+            background-color: nth($colores, 5 );
             border: nth($colores, 3 ) 2px solid;
             color: nth($colores, 3 );
 
