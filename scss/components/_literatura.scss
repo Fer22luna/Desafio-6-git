@@ -1,32 +1,38 @@
+.main-contenedor {
 
-.main-contenedor{
+    .fotos-extranjero {
+        background-color: nth($colores, 1);
 
-        .fotos-extranjero{
-            background-color: nth($colores, 1 );
-            h1{
-                font-weight: lighter;
-                font-size: 40px;
-                color: nth($colores, 1);
-                text-align: center;
-                margin-bottom: 30px;
-                margin-top: 70px;
-                padding-top: 80px;
-            }
-            .cartas{
-              .card{
-                border:nth($colores, 3 ) 10px solid ;
-
-                  div{
-                      button{
-                    width: auto;
-                    font-size: auto;
-                    background-color: nth($colores, 3 );
-                    border: nth($colores, 3 ) 2px solid;
-                    color: nth($colores, 1 );
-                      }
-                  }
-              }
-            }
-            
+        @media screen and (max-width:550px) {
+            background-color: nth($colores, 3);
         }
+
+        h1 {
+            font-weight: lighter;
+            font-size: 40px;
+            color: nth($colores, 1);
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 70px;
+            padding-top: 80px;
+        }
+
+        .cartas {
+            .card {
+                border: nth($colores, 3) 10px solid;
+
+
+                div {
+                    button {
+                        width: auto;
+                        font-size: auto;
+                        background-color: nth($colores, 3);
+                        border: nth($colores, 3) 2px solid;
+                        color: nth($colores, 1);
+                    }
+                }
+            }
+        }
+
     }
+}

@@ -91,16 +91,27 @@ main .hero {
 }
 main .hero h1 {
   font-family: "Rubik", sans-serif;
-  font-size: 90px;
+  font-size: 80px;
   font-weight: bolder;
   text-align: center;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 550px) {
+  main .hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
 }
 main .hero h2 {
   font-family: "Rubik", sans-serif;
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 550px) {
+  main .hero h2 {
+    font-size: 35px;
+  }
 }
 main .hero div {
   /*  display: flex;
@@ -125,7 +136,7 @@ main .hero div input:hover {
 }
 main .hero div button {
   background-color: #DCD6F7;
-  width: 8%;
+  width: auto;
   height: 35px;
   padding-left: 15px;
   padding-right: 15px;
@@ -481,6 +492,11 @@ main .compra-venta a:hover {
 }
 .main-contenedor .fotos-extranjero {
   background-color: #DCD6F7;
+}
+@media screen and (max-width: 550px) {
+  .main-contenedor .fotos-extranjero {
+    background-color: #424874;
+  }
 }
 .main-contenedor .fotos-extranjero h1 {
   font-weight: lighter;
