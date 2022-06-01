@@ -4,12 +4,17 @@
         width: 80%;
         height: 120vh;
 
+
+        @media screen and (max-width:780px) {
+            height: 150vh;
+        }
+
         @media screen and (max-width:680px) {
-            height: 155vh;
+            height: 160vh;
 
         }
         @media screen and (max-width:450px) {
-            height: 170vh;
+            height: 160vh;
             width: 100%;
             background-color: nth($colores, 3 );
         }
@@ -24,7 +29,7 @@
             margin-top: 30vh;
             margin-bottom: 30vh;
             
-            @media screen and (max-width:680px) {
+            @media screen and (max-width:780px) {
                 flex-direction: column;
                 height: auto;
 
@@ -48,40 +53,50 @@
                 flex-direction: column;
                 color: nth($colores , 1);
                 background-color: nth($colores, 3);
-                width: 60%;
+                width: 80%;
                 height: auto;
                 margin-left: 45px;
                 margin-right: 95px;
 
-                @media screen and (max-width:900px) {
+                @media screen and (max-width:990px) {
                     margin-left: 0;
                     margin-right: 30px;
+                    width: 100%;
                 }
-                @media screen and (max-width:680px) {
-                    margin-left: 0;
-                    margin-right: 0;
+                @media screen and (max-width:780px) {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    width: auto;
                 }
 
                 p {
+                    font-family: "louisCafe";
                     text-align: justify;
                     font-weight: lighter;
                     line-height: 30px;
-                    font-size: 15px;
+                    font-size: 20px;
                     letter-spacing: normal;
 
                     @media screen and (max-width:1100px) {
-                        line-height: 20px;
-                        font-size: 10px;
+                        line-height: 25px;
+                        font-size: 18px;
 
                     }
     
+                    @media screen and (max-width:990px) {
+                        line-height: 20px;
+                        font-size: 15px;
+
+                    }
                 }
 
                 h1 {
-                    font-size: 35px;
+                    font-family: "lemonMilk";
+                    font-size: 25px;
                     font-weight: bold;
                     padding-bottom: 30px;
                     border-top: 20px;
+                    text-align: center;
 
                     @media screen and (max-width:1100px) {
                         font-size: 20px;
@@ -103,10 +118,11 @@
                     border-radius: 5px;
                     border: nth($colores , 2) solid 1px;
                 
-                    @media screen and (max-width:680px) {
+                    @media screen and (max-width:780px) {
                         margin-bottom: 15px;
         
                     }
+
 
                     &:hover{
                         border: nth($colores , 3) solid 1px;

@@ -8,22 +8,38 @@
         }
 
         h1 {
-            font-weight: lighter;
+            font-family: "lemonMilk";
             font-size: 40px;
-            color: nth($colores, 1);
+            color: nth($colores, 3);
             text-align: center;
             margin-bottom: 30px;
             margin-top: 70px;
             padding-top: 80px;
+
+            @media screen and (max-width:550px) {
+                color: nth($colores, 5 );
+                font-size: 30px;
+            }
         }
 
         .cartas {
             .card {
-                border: nth($colores, 3) 10px solid;
+                font-family: "louisCafe";
+                border: nth($colores, 3) 7px solid;
+                transition: all 1s;
 
-
+                &:hover{
+                    transform: scale(1.1);
+                }
+                @media screen and (max-width:550px) {
+                    &:hover{
+                        transform: none;
+               
+                }
+            }
                 div {
                     button {
+                        font-family: 'Roboto', sans-serif;
                         width: auto;
                         font-size: auto;
                         background-color: nth($colores, 3);

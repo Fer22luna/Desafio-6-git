@@ -1,6 +1,20 @@
 @import './listas';
 @import './mixin';
 
+@font-face {
+    font-family: "lemonMilk";
+    src: url('../fonts/LEMONMILK-Bold.otf');
+}
+@font-face {
+    font-family: "louisCafe";
+    src: url('../fonts/louisGeorgeCafeItalic.ttf');
+}
+
+@font-face {
+    font-family: "louisCafel";
+    src: url('../fonts/louisGeorgeCafeLight.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;

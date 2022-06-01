@@ -4,23 +4,30 @@
         height: auto;
 
         h1 {
-            text-align: map-get($h1, text-a );
-            color: nth($colores, 3 );
-            font-size: map-get($h1, fs );
-            margin-bottom:  map-get($h1, mb );
-            margin-top:  map-get($h1, mt );
-            padding-top:  map-get($h1, pt );
+            font-family: "lemonMilk";
+            text-align: map-get($h1, text-a);
+            color: nth($colores, 3);
+            font-size: map-get($h1, fs);
+            margin-bottom: map-get($h1, mb);
+            margin-top: map-get($h1, mt);
+            padding-top: map-get($h1, pt);
+
+            @media screen and (max-width:550px) {
+               font-size: 30px;
+               
+            }
 
         }
 
         .todas-categorias {
-            width: 100%;
-            height: auto;
+
             @include flex (flex, space-evenly, center);
             flex-direction: column;
             width: auto;
             height: 150vh;
             margin-bottom: 30px;
+            font-family: "louisCafe";
+            text-align: center;
 
             a {
                 @extend %a-categoria;
@@ -144,8 +151,14 @@
                     &:hover {
                         background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/manga.jpg);
                     }
+
+
                 }
 
+                @media screen and (max-width:550px) {
+                    width: 90%;
+                   
+                }
             }
 
             .fotos-libros {

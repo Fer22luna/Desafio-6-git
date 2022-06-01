@@ -1,161 +1,251 @@
-@import '../base/listas';
-
-main{
-.hero {
-    width: 100%;
-    height: 120vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/biblioteca.jpg);
-    background-size: cover;
-    @include flex (flex,center,center);
-    flex-direction: column;
-    color: nth($colores, 1 );
-    background-attachment: fixed;
-
-    h1 {
-        font-family: 'Rubik', sans-serif;
-        font-size: 80px;
-        font-weight: bolder;
-        text-align: center;
-        margin-bottom: 10px;
-
-        @media screen and (max-width:550px) {
-            font-size: 50px;
-            margin-bottom: 10px;
-        }
-    }
-
-    h2 {
-        font-family: 'Rubik', sans-serif;
-        font-size: 50px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        @media screen and (max-width:550px) {
-            font-size: 35px;
-        
-        }
-    }
-
-    div {
-
-        @include flex (flex,center,center);
-        flex-direction: row;
+main {
+    .hero {
         width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/biblioteca.jpg);
+        background-size: cover;
+        @include flex (flex, center, center);
+        flex-direction: column;
+        color: nth($colores, 1);
+        background-attachment: fixed;
 
-        input {
-            width: 40%;
-            height: 100%;
-            border-radius: 5px;
-            outline: none;
-            color: nth($colores , 2);
-            background-color:nth($colores , 1) ;
-
-            &:hover {
-                border-color: nth($colores, 1 );
-            }
-        }
-
-        button {
-            background-color: nth($colores , 1);
-            width: auto;
-            height: 35px;
-            padding-left: 15px;
-            padding-right: 15px;
-            font-family: 'Roboto', sans-serif;
+        h1 {
+            font-family: "lemonMilk";
+            font-size: 80px;
             font-weight: bolder;
-            border-radius: 5px;
-        }
-    }
+            text-align: center;
+            margin-bottom: 10px;
+            transition: all 1s;
 
-}
-
-.novedades {
-    width: 100%;
-    height: auto;
-
-    h2 {
-        font-family: 'Rubik', sans-serif;
-        font-size: 40px;
-        color: nth($colores , 3);
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        text-decoration: none;
-    }
-    .cartas{
-        .card-body{
-
-            p{
-                text-align: justify;
-            }
-           
-        }
-        button{ 
-            width: auto;
-            font-size: auto;
-            background-color: nth($colores, 5 );
-            border: nth($colores, 3 ) 2px solid;
-            color: nth($colores, 3 );
-
-       
-
-
-            &:hover {
-                background-color: nth($colores, 3 );
-                color: nth($colores, 5 );
+            &:hover{
+                transform: scale(1.1);
             }
 
+            @media screen and (max-width:550px) {
+                font-size: 30px;
+            
+            }
+        }
+
+        h2 {
+            font-family: "louisCafe";
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 10px;
+
+            @media screen and (max-width:550px) {
+                font-size: 30px;
+
+            }
+        }
+
+        div {
+
+            @include flex (flex, center, center);
+            flex-direction: row;
+            width: 100%;
+
+            input {
+                width: 40%;
+                height: 100%;
+                border-radius: 5px;
+                outline: none;
+                color: nth($colores , 2);
+                background-color: nth($colores , 1);
+
+                &:hover {
+                    border-color: nth($colores, 1);
+                }
+            }
+
+            button {
+                background-color: nth($colores , 1);
+                width: auto;
+                height: 35px;
+                padding-left: 15px;
+                padding-right: 15px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bolder;
+                border-radius: 5px;
+            }
+        }
+
     }
 
+    .intro {
+        width: 90%;
+        height: auto;
+        background-color: nth($colores, 5);
+        color: nth($colores, 3);
+        margin-top: 30px;
 
-    }
-
-
-}
-
-
-.compra-venta{
-    font-family: 'Rubik', sans-serif;
-    width: 80%;
-    height: auto;
-    @include flex (flex,center,center);
-    flex-direction: column;
-    color: nth($colores, 5 );
-    margin-top: 50px;
-  background-color: nth($colores, 3 );
-
-    div{
-          h2{
-        font-size: 55px;
-        font-weight: bold;
-        text-align: center;
-    }
-        p{ font-size: 38px;
+        h2 {
+            font-family: "louisCafe";
+            font-size: 40px;
+            color: nth($colores , 3);
             font-weight: bold;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            text-decoration: none;
+
+            @media screen and (max-width:550px) {
+                font-size: 30px;
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+        }
+
+        p {
+            font-family: "louisCafe";
+            font-size: 25px;
+            text-align: center;
+            color: nth($colores, 3);
+            padding: 30px;
+            font-weight: lighter;
+
+            @media screen and (max-width:550px) {
+                font-size: 18px;
+
+            }
+        }
+    }
+
+
+    .novedades {
+        width: 100%;
+        height: auto;
+
+        h2 {
+
+            font-family: "lemonMilk";
+            font-size: 50px;
+            color: nth($colores , 3);
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            text-decoration: none;
+
+            @media screen and (max-width:550px) {
+                font-size: 35px;
+               
+            }
+        }
+
+        .cartas {
+            .card-body {
+                h5 {
+                    font-family: "louisCafel";
+                    font-weight: bold;
+                }
+
+                p {
+                    text-align: justify;
+                    font-family: "louisCafel";
+                }
+
+            }
+
+            button {
+                width: auto;
+                font-size: auto;
+                background-color: nth($colores, 5);
+                border: nth($colores, 3) 2px solid;
+                color: nth($colores, 3);
+
+
+
+
+                &:hover {
+                    background-color: nth($colores, 3);
+                    color: nth($colores, 5);
+                }
+
+            }
+
+
+        }
+
 
     }
+
+
+    .compra-venta {
+
+        width: 90%;
+        height: auto;
+        @include flex (flex, center, center);
+        flex-direction: column;
+        color: nth($colores, 5);
+        margin-top: 50px;
+        background-color: nth($colores, 3);
+
+        div {
+            h2 {
+                font-family: "lemonMilk";
+                font-size: 55px;
+                font-weight: bold;
+                text-align: center;
+
+                @media screen and (max-width:550px) {
+                    font-size: 35px;
+                  
+                }
+            }
+
+            p {
+                font-family: "louisCafe";
+                font-size: 38px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 20px;
+                @media screen and (max-width:550px) {
+                    font-size: 28px;
+                  
+                }
+            }
         }
-    a{font-family: 'Rubik', sans-serif;
-        font-weight: bold;
-        font-size: 35px;
-        color: nth($colores, 3 );
-        background-color: nth($colores, 2 );
-        text-decoration: none;
-        padding: 10px;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        border-radius: 15px;
-        border: nth($colores, 1 ) solid 2px;
-        transition: all 2s;
-        &:hover{
-            color: nth($colores , 3);
-            background-color: nth($colores , 5);
-            transform: scale(1.3);
+
+        a {
+            font-family: "louisCafe";
+            font-weight: bold;
+            font-size: 35px;
+            color: nth($colores, 3);
+            background-color: nth($colores, 2);
+            text-decoration: none;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            border: nth($colores, 1) solid 2px;
             transition: all 2s;
+
+            &:hover {
+                color: nth($colores , 3);
+                background-color: nth($colores , 5);
+                transform: scale(1.3);
+                transition: all 2s;
+            }
+
         }
- 
-       }
-}
+    }
+
+    .atencion {
+        width: 90%;
+
+        .todas-atenciones {
+            div {
+                height: auto;
+
+                div {
+
+                    img {
+                        width: 40px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -2,15 +2,20 @@ header {
     nav {
         background-color: nth($colores, 2 );
         height: 17vh;
+        font-family: "louisCafe";
 
         div {
+
+            
              div {
-                    ul {      
+                    ul {    
+                        background-color: nth($colores , 2 );  
                         color: nth($colores, 1 );
                         .li-drop {
                             .color-menu {
                                 background-color: nth($colores, 1 );
                                 object-fit: cover;
+
                                 li {
                                     .d-i {
                                         &:hover {
