@@ -1,27 +1,52 @@
 header {
     nav {
-        background-color: nth($colores, 2 );
-        height: 17vh;
+        background-color: nth($colores, 2);
+        height: 15vh;
         font-family: "louisCafe";
 
+        @media screen and (max-width:576px) {
+            height: 12vh;
+
+        }
+
         div {
+            .logo {
+                width: 82px;
+                height: 80px;
 
-            
-             div {
-                    ul {    
-                        background-color: nth($colores , 2 );  
-                        color: nth($colores, 1 );
-                        .li-drop {
-                            .color-menu {
-                                background-color: nth($colores, 1 );
-                                object-fit: cover;
+                @media screen and (max-width:576px) {
+                    width: 62px;
+                    height: 60px;
+                    margin-left: 5px !important;
 
-                                li {
-                                    .d-i {
-                                        &:hover {
-                                            background-color: nth($colores, 3 );
-                                            color: nth($colores, 1 );
-                                        }
+                }
+            }
+
+            div {
+                ul {
+                    background-color: nth($colores , 2);
+                    color: nth($colores, 1);
+                    font-size: 30px;
+
+                    @media screen and (max-width:1300px) {
+                        font-size: 22px !important;
+    
+                    }
+                    .nav-link {
+                        color: nth($colores , 3) !important;
+
+                    }
+
+                    .li-drop {
+                        .color-menu {
+                            background-color: nth($colores, 1);
+                            object-fit: cover;
+
+                            li {
+                                .d-i {
+                                    &:hover {
+                                        background-color: nth($colores, 3);
+                                        color: nth($colores, 1);
                                     }
                                 }
                             }
@@ -31,3 +56,4 @@ header {
             }
         }
     }
+}

@@ -3,6 +3,10 @@
 width: 80%;
 text-decoration: none;
 display: flex;
+@media screen and (max-width:600px) {
+    width: 90%;
+
+}
 }
 
 
@@ -15,10 +19,16 @@ object-fit: contain;
 
 %div-foto{
     width: 100%;
-    height: 110px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
     color: #F4EEFF;
+
+    @media screen and (max-width:600px) {
+        height: 120px;
+        font-size: 20px;
+
+    }
 }

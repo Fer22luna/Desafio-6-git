@@ -1,3 +1,4 @@
+
 .main-contenedor {
 
     .fotos-extranjero {
@@ -12,15 +13,24 @@
             font-size: 40px;
             color: nth($colores, 3);
             text-align: center;
-            margin-bottom: 30px;
-            margin-top: 70px;
-            padding-top: 80px;
+            margin-bottom: 50px;
+            margin-top: 25vh;
 
-            @media screen and (max-width:550px) {
-                color: nth($colores, 5 );
-                font-size: 30px;
+            @media screen and (max-width:900px) {
+            
+                font-size: 35px;
+            }
+
+            @media screen and (max-width:576px) {
+                color: nth($colores, 5);
+                font-size: 25px;
+                margin-bottom: 30px;
+                margin-top: 21vh;
+
             }
         }
+
+
 
         .cartas {
             .card {
@@ -28,15 +38,21 @@
                 border: nth($colores, 3) 7px solid;
                 transition: all 1s;
 
-                &:hover{
+                &:hover {
                     transform: scale(1.1);
                 }
-                @media screen and (max-width:550px) {
-                    &:hover{
-                        transform: none;
-               
+
+                @media screen and (max-width:576px) {
+                    transition-property: none !important;
+                    transform: none !important;
+                   margin-left: 25px !important;
+                   margin-right: 25px !important;
+
+
+
                 }
-            }
+
+
                 div {
                     button {
                         font-family: 'Roboto', sans-serif;

@@ -5,16 +5,21 @@
 
         h1 {
             font-family: "lemonMilk";
-            text-align: map-get($h1, text-a);
+            text-align: center;
             color: nth($colores, 3);
-            font-size: map-get($h1, fs);
-            margin-bottom: map-get($h1, mb);
-            margin-top: map-get($h1, mt);
-            padding-top: map-get($h1, pt);
+            font-size: 40px;
+            margin-bottom: 30px;
+            margin-top: 25vh;
+
+            @media screen and (max-width:900px) {
+                margin-top: 22vh;
+
+            }
 
             @media screen and (max-width:550px) {
-               font-size: 30px;
-               
+
+                font-size: 30px;
+
             }
 
         }
@@ -29,16 +34,17 @@
             font-family: "louisCafe";
             text-align: center;
 
+
             a {
                 @extend %a-categoria;
 
                 .extranjera {
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/libro1.jpg);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/libro1.webp);
                     @extend %bg-property;
                     background-position: center;
 
                     &:hover {
-                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/libro1.jpg);
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/libro1.webp);
                     }
                 }
 
@@ -51,12 +57,12 @@
                 @extend %a-categoria;
 
                 .latinoamericana {
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/latinoamericana.jpg);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/latinoamericana.webp);
                     @extend %bg-property;
                     background-position: center;
 
                     &:hover {
-                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/latinoamericana.jpg);
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/latinoamericana.webp);
                     }
                 }
 
@@ -70,12 +76,12 @@
                 @extend %a-categoria;
 
                 .argentina {
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/argentina.jpg);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/argentina.webp);
                     @extend %bg-property;
                     background-position: center;
 
                     &:hover {
-                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/argentina.jpg);
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/argentina.webp);
                     }
                 }
 
@@ -89,12 +95,12 @@
                 @extend %a-categoria;
 
                 .filosofia {
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/filo.jpg);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/filo.webp);
                     @extend %bg-property;
                     background-position: 14% 25%;
 
                     &:hover {
-                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/filo.jpg);
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/filo.webp);
                     }
                 }
 
@@ -127,11 +133,11 @@
                 @extend %a-categoria;
 
                 .comics {
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/comics.jpg);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/comics.webp);
                     @extend %bg-property;
 
                     &:hover {
-                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/comics.jpg);
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/comics.webp);
                     }
                 }
 
@@ -144,25 +150,19 @@
                 @extend %a-categoria;
 
                 .manga {
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/manga.jpg);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url(../Multimedia/manga.webp);
                     @extend %bg-property;
                     background-position: center;
 
                     &:hover {
-                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/manga.jpg);
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../Multimedia/manga.webp);
                     }
 
-
                 }
 
-                @media screen and (max-width:550px) {
-                    width: 90%;
-                   
+                .fotos-libros {
+                    @extend %div-foto;
                 }
-            }
-
-            .fotos-libros {
-                @extend %div-foto;
             }
         }
     }

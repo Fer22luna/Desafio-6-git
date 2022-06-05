@@ -55,6 +55,11 @@ body .grid-contenedor .main-contenedor {
   text-decoration: none;
   display: flex;
 }
+@media screen and (max-width: 600px) {
+  .main-contenedor .seccion-categoria .todas-categorias a {
+    width: 90%;
+  }
+}
 
 .main-contenedor .seccion-categoria .todas-categorias a .manga, .main-contenedor .seccion-categoria .todas-categorias a .comics, .main-contenedor .seccion-categoria .todas-categorias a .idiomas, .main-contenedor .seccion-categoria .todas-categorias a .filosofia, .main-contenedor .seccion-categoria .todas-categorias a .argentina, .main-contenedor .seccion-categoria .todas-categorias a .latinoamericana, .main-contenedor .seccion-categoria .todas-categorias a .extranjera {
   background-size: 100%;
@@ -62,24 +67,55 @@ body .grid-contenedor .main-contenedor {
   object-fit: contain;
 }
 
-.main-contenedor .seccion-categoria .todas-categorias .fotos-libros, .main-contenedor .seccion-categoria .todas-categorias a .fotos-libros {
+.main-contenedor .seccion-categoria .todas-categorias a .fotos-libros {
   width: 100%;
-  height: 110px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
   color: #F4EEFF;
 }
+@media screen and (max-width: 600px) {
+  .main-contenedor .seccion-categoria .todas-categorias a .fotos-libros {
+    height: 120px;
+    font-size: 20px;
+  }
+}
 
 header nav {
   background-color: #A6B1E1;
-  height: 17vh;
+  height: 15vh;
   font-family: "louisCafe";
+}
+@media screen and (max-width: 576px) {
+  header nav {
+    height: 12vh;
+  }
+}
+header nav div .logo {
+  width: 82px;
+  height: 80px;
+}
+@media screen and (max-width: 576px) {
+  header nav div .logo {
+    width: 62px;
+    height: 60px;
+    margin-left: 5px !important;
+  }
 }
 header nav div div ul {
   background-color: #A6B1E1;
   color: #DCD6F7;
+  font-size: 30px;
+}
+@media screen and (max-width: 1300px) {
+  header nav div div ul {
+    font-size: 22px !important;
+  }
+}
+header nav div div ul .nav-link {
+  color: #424874 !important;
 }
 header nav div div ul .li-drop .color-menu {
   background-color: #DCD6F7;
@@ -93,7 +129,7 @@ header nav div div ul .li-drop .color-menu li .d-i:hover {
 main .hero {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/biblioteca.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/biblioteca.webp);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -309,7 +345,7 @@ main .atencion .todas-atenciones div div img {
 .footer-contenedor a .logo {
   width: 40px;
   height: auto;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .footer-contenedor ul {
   list-style: none;
@@ -326,7 +362,7 @@ main .atencion .todas-atenciones div div img {
   text-shadow: none;
 }
 .footer-contenedor div {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .footer-contenedor div a img {
   width: 50px;
@@ -340,17 +376,17 @@ main .atencion .todas-atenciones div div img {
 }
 @media screen and (max-width: 780px) {
   .main-contenedor .seccion-presentacion {
-    height: 150vh;
+    height: 120vh;
   }
 }
 @media screen and (max-width: 680px) {
   .main-contenedor .seccion-presentacion {
-    height: 160vh;
+    height: 120vh;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 576px) {
   .main-contenedor .seccion-presentacion {
-    height: 160vh;
+    height: 120vh;
     width: 100%;
     background-color: #424874;
   }
@@ -368,17 +404,19 @@ main .atencion .todas-atenciones div div img {
   .main-contenedor .seccion-presentacion .centro-presentacion {
     flex-direction: column;
     height: auto;
+    margin-top: 20vh;
   }
 }
 .main-contenedor .seccion-presentacion .centro-presentacion img {
-  width: 300px;
+  width: 350px;
   height: 300px;
-  margin: 50px;
+  margin: 50px 40px 50px 80px;
   border: 10px #e2e0e3 solid;
 }
 @media screen and (max-width: 850px) {
   .main-contenedor .seccion-presentacion .centro-presentacion img {
     margin: 20px;
+    border: none;
   }
 }
 .main-contenedor .seccion-presentacion .centro-presentacion div {
@@ -393,17 +431,17 @@ main .atencion .todas-atenciones div div img {
   margin-left: 45px;
   margin-right: 95px;
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1070px) {
   .main-contenedor .seccion-presentacion .centro-presentacion div {
-    margin-left: 0;
-    margin-right: 30px;
+    margin-left: 0px;
+    margin-right: 15px;
     width: 100%;
   }
 }
 @media screen and (max-width: 780px) {
   .main-contenedor .seccion-presentacion .centro-presentacion div {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     width: auto;
   }
 }
@@ -411,14 +449,14 @@ main .atencion .todas-atenciones div div img {
   font-family: "louisCafe";
   text-align: justify;
   font-weight: lighter;
-  line-height: 30px;
-  font-size: 20px;
+  line-height: 40px;
+  font-size: 30px;
   letter-spacing: normal;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1285px) {
   .main-contenedor .seccion-presentacion .centro-presentacion div p {
     line-height: 25px;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 990px) {
@@ -427,21 +465,38 @@ main .atencion .todas-atenciones div div img {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 600px) {
+  .main-contenedor .seccion-presentacion .centro-presentacion div p {
+    line-height: 25px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-contenedor .seccion-presentacion .centro-presentacion div p {
+    line-height: 22px;
+    font-size: 18px;
+  }
+}
 .main-contenedor .seccion-presentacion .centro-presentacion div h1 {
   font-family: "lemonMilk";
-  font-size: 25px;
+  font-size: 40px;
   font-weight: bold;
   padding-bottom: 30px;
   border-top: 20px;
   text-align: center;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1285px) {
   .main-contenedor .seccion-presentacion .centro-presentacion div h1 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     padding-bottom: 20px;
     border-top: 10px;
     text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-contenedor .seccion-presentacion .centro-presentacion div h1 {
+    font-size: 25px;
   }
 }
 .main-contenedor .seccion-presentacion .centro-presentacion div a {
@@ -477,17 +532,24 @@ main .atencion .todas-atenciones div div img {
   color: #424874;
   font-size: 40px;
   margin-bottom: 30px;
-  margin-top: 60px;
-  padding-top: 100px;
+  padding-top: 200px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .contacto h1 {
     font-size: 30px;
+    padding-top: 150px;
+    margin-bottom: 0px;
   }
+}
+.contacto div {
+  padding-bottom: 20px;
 }
 @media screen and (max-width: 500px) {
   .contacto div .mapa iframe {
     height: 280px;
+    border: #424874 solid 5px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -537,8 +599,12 @@ main .atencion .todas-atenciones div div img {
   color: #424874;
   font-size: 40px;
   margin-bottom: 30px;
-  margin-top: 60px;
-  padding-top: 100px;
+  margin-top: 25vh;
+}
+@media screen and (max-width: 900px) {
+  .main-contenedor .seccion-categoria h1 {
+    margin-top: 22vh;
+  }
 }
 @media screen and (max-width: 550px) {
   .main-contenedor .seccion-categoria h1 {
@@ -557,32 +623,32 @@ main .atencion .todas-atenciones div div img {
   text-align: center;
 }
 .main-contenedor .seccion-categoria .todas-categorias a .extranjera {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/libro1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/libro1.webp);
   background-position: center;
 }
 .main-contenedor .seccion-categoria .todas-categorias a .extranjera:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/libro1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/libro1.webp);
 }
 .main-contenedor .seccion-categoria .todas-categorias a .latinoamericana {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/latinoamericana.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/latinoamericana.webp);
   background-position: center;
 }
 .main-contenedor .seccion-categoria .todas-categorias a .latinoamericana:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/latinoamericana.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/latinoamericana.webp);
 }
 .main-contenedor .seccion-categoria .todas-categorias a .argentina {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/argentina.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/argentina.webp);
   background-position: center;
 }
 .main-contenedor .seccion-categoria .todas-categorias a .argentina:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/argentina.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/argentina.webp);
 }
 .main-contenedor .seccion-categoria .todas-categorias a .filosofia {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/filo.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/filo.webp);
   background-position: 14% 25%;
 }
 .main-contenedor .seccion-categoria .todas-categorias a .filosofia:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/filo.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/filo.webp);
 }
 .main-contenedor .seccion-categoria .todas-categorias a .idiomas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/tales.webp);
@@ -592,22 +658,17 @@ main .atencion .todas-atenciones div div img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/tales.webp);
 }
 .main-contenedor .seccion-categoria .todas-categorias a .comics {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/comics.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/comics.webp);
 }
 .main-contenedor .seccion-categoria .todas-categorias a .comics:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/comics.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/comics.webp);
 }
 .main-contenedor .seccion-categoria .todas-categorias a .manga {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/manga.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../Multimedia/manga.webp);
   background-position: center;
 }
 .main-contenedor .seccion-categoria .todas-categorias a .manga:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/manga.jpg);
-}
-@media screen and (max-width: 550px) {
-  .main-contenedor .seccion-categoria .todas-categorias a {
-    width: 90%;
-  }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Multimedia/manga.webp);
 }
 .main-contenedor .fotos-extranjero {
   background-color: #DCD6F7;
@@ -622,14 +683,20 @@ main .atencion .todas-atenciones div div img {
   font-size: 40px;
   color: #424874;
   text-align: center;
-  margin-bottom: 30px;
-  margin-top: 70px;
-  padding-top: 80px;
+  margin-bottom: 50px;
+  margin-top: 25vh;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 900px) {
+  .main-contenedor .fotos-extranjero h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 576px) {
   .main-contenedor .fotos-extranjero h1 {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 21vh;
   }
 }
 .main-contenedor .fotos-extranjero .cartas .card {
@@ -640,9 +707,12 @@ main .atencion .todas-atenciones div div img {
 .main-contenedor .fotos-extranjero .cartas .card:hover {
   transform: scale(1.1);
 }
-@media screen and (max-width: 550px) {
-  .main-contenedor .fotos-extranjero .cartas .card:hover {
-    transform: none;
+@media screen and (max-width: 576px) {
+  .main-contenedor .fotos-extranjero .cartas .card {
+    transition-property: none !important;
+    transform: none !important;
+    margin-left: 25px !important;
+    margin-right: 25px !important;
   }
 }
 .main-contenedor .fotos-extranjero .cartas .card div button {
