@@ -1,4 +1,3 @@
-
 .main-contenedor {
 
     .fotos-extranjero {
@@ -17,7 +16,7 @@
             margin-top: 25vh;
 
             @media screen and (max-width:900px) {
-            
+
                 font-size: 35px;
             }
 
@@ -26,11 +25,8 @@
                 font-size: 25px;
                 margin-bottom: 30px;
                 margin-top: 21vh;
-
             }
         }
-
-
 
         .cartas {
             .card {
@@ -45,11 +41,8 @@
                 @media screen and (max-width:576px) {
                     transition-property: none !important;
                     transform: none !important;
-                   margin-left: 25px !important;
-                   margin-right: 25px !important;
-
-
-
+                    margin-left: 25px !important;
+                    margin-right: 25px !important;
                 }
 
 

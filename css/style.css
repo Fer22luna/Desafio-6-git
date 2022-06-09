@@ -1,11 +1,4 @@
 /* Paleta de colores*/
-/* 
-.ideas{
-@include flex(flex,space-between,center)
-
-}
-
-*/
 @font-face {
   font-family: "lemonMilk";
   src: url("../fonts/LEMONMILK-Bold.otf");
@@ -43,13 +36,6 @@ body .grid-contenedor .main-contenedor {
 }
 
 /* Paleta de colores*/
-/* 
-.ideas{
-@include flex(flex,space-between,center)
-
-}
-
-*/
 .main-contenedor .seccion-categoria .todas-categorias a {
   width: 80%;
   text-decoration: none;
@@ -69,24 +55,20 @@ body .grid-contenedor .main-contenedor {
 
 .main-contenedor .seccion-categoria .todas-categorias a .fotos-libros {
   width: 100%;
-  height: 150px;
+  height: 17vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
   color: #F4EEFF;
 }
-@media screen and (max-width: 600px) {
-  .main-contenedor .seccion-categoria .todas-categorias a .fotos-libros {
-    height: 120px;
-    font-size: 20px;
-  }
-}
 
 header nav {
   background-color: #A6B1E1;
   height: 15vh;
   font-family: "louisCafe";
+  font-weight: bold;
+  text-transform: capitalize;
 }
 @media screen and (max-width: 576px) {
   header nav {
@@ -116,6 +98,10 @@ header nav div div ul {
 }
 header nav div div ul .nav-link {
   color: #424874 !important;
+}
+header nav div div ul .nav-link:hover {
+  color: #DCD6F7 !important;
+  text-shadow: 1px 1px 1px #424874;
 }
 header nav div div ul .li-drop .color-menu {
   background-color: #DCD6F7;
@@ -171,9 +157,15 @@ main .hero div {
   align-items: center;
   flex-direction: row;
   width: 100%;
+  margin-top: 50px;
+}
+@media screen and (max-width: 900px) {
+  main .hero div {
+    flex-direction: column;
+  }
 }
 main .hero div input {
-  width: 40%;
+  width: 50%;
   height: 100%;
   border-radius: 5px;
   outline: none;
@@ -183,8 +175,14 @@ main .hero div input {
 main .hero div input:hover {
   border-color: #DCD6F7;
 }
+@media screen and (max-width: 900px) {
+  main .hero div input {
+    width: 70%;
+  }
+}
 main .hero div button {
-  background-color: #DCD6F7;
+  background-color: #A6B1E1;
+  color: #424874;
   width: auto;
   height: 35px;
   padding-left: 15px;
@@ -192,6 +190,18 @@ main .hero div button {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   border-radius: 5px;
+  margin-left: 30px;
+  border: #424874 solid 2px;
+}
+main .hero div button:hover {
+  background-color: #424874;
+  color: #DCD6F7;
+}
+@media screen and (max-width: 900px) {
+  main .hero div button {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
 }
 main .intro {
   width: 90%;
@@ -233,6 +243,11 @@ main .intro p {
 main .novedades {
   width: 100%;
   height: auto;
+}
+@media screen and (max-width: 576px) {
+  main .novedades {
+    width: 90%;
+  }
 }
 main .novedades h2 {
   font-family: "lemonMilk";
@@ -317,10 +332,64 @@ main .compra-venta a {
   transition: all 2s;
 }
 main .compra-venta a:hover {
-  color: #424874;
-  background-color: white;
+  /*  color: nth($colores , 3);
+  background-color: nth($colores , 5); */
+  animation: gradientColor 0.7s;
   transform: scale(1.3);
-  transition: all 2s;
+  transition: all 1s;
+}
+@keyframes gradientColor {
+  10% {
+    background: linear-gradient(90deg, rgb(252, 70, 107) 5%, rgb(166, 177, 225) 20%);
+  }
+  15% {
+    background: linear-gradient(90deg, rgb(252, 70, 107) 15%, rgb(166, 177, 225) 25%);
+  }
+  20% {
+    background: linear-gradient(90deg, rgb(252, 70, 107) 35%, rgb(166, 177, 225) 50%);
+  }
+  25% {
+    background: radial-gradient(circle, rgb(252, 70, 107) 24%, rgb(166, 177, 225) 40%);
+  }
+  30% {
+    background: radial-gradient(circle, rgb(252, 70, 107) 33%, rgb(166, 177, 225) 58%);
+  }
+  35% {
+    background: linear-gradient(90deg, rgb(166, 177, 225) 47%, rgb(252, 70, 107) 63%);
+  }
+  40% {
+    background: linear-gradient(90deg, rgb(166, 177, 225) 52%, rgb(252, 70, 107) 77%);
+  }
+  45% {
+    background: linear-gradient(90deg, rgb(166, 177, 225) 71%, rgb(252, 70, 107) 88%);
+  }
+  50% {
+    background: linear-gradient(90deg, rgb(166, 177, 225) 84%, rgb(252, 70, 107) 97%);
+  }
+  60% {
+    background: linear-gradient(90deg, rgb(166, 177, 225) 71%, rgb(252, 70, 107) 88%);
+  }
+  65% {
+    background: linear-gradient(90deg, rgb(166, 177, 225) 52%, rgb(252, 70, 107) 77%);
+  }
+  70% {
+    background: linear-gradient(90deg, rgb(166, 177, 225) 47%, rgb(252, 70, 107) 63%);
+  }
+  75% {
+    background: radial-gradient(circle, rgb(252, 70, 107) 33%, rgb(166, 177, 225) 58%);
+  }
+  80% {
+    background: radial-gradient(circle, rgb(252, 70, 107) 24%, rgb(166, 177, 225) 40%);
+  }
+  85% {
+    background: linear-gradient(90deg, rgb(252, 70, 107) 35%, rgb(166, 177, 225) 50%);
+  }
+  90% {
+    background: linear-gradient(90deg, rgb(252, 70, 107) 15%, rgb(166, 177, 225) 25%);
+  }
+  95% {
+    background: linear-gradient(90deg, rgb(252, 70, 107) 5%, rgb(166, 177, 225) 20%);
+  }
 }
 main .atencion {
   width: 90%;
@@ -500,25 +569,26 @@ main .atencion .todas-atenciones div div img {
   }
 }
 .main-contenedor .seccion-presentacion .centro-presentacion div a {
-  font-weight: lighter;
+  font-weight: bolder;
   font-size: 16px;
   color: #424874;
   background-color: #A6B1E1;
   text-decoration: none;
-  padding: 8px 12px 8px 12px;
+  padding: 12px 16px 12px 16px;
   margin-top: 15px;
   border-radius: 5px;
   border: #A6B1E1 solid 1px;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 780px) {
   .main-contenedor .seccion-presentacion .centro-presentacion div a {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }
 .main-contenedor .seccion-presentacion .centro-presentacion div a:hover {
-  border: #424874 solid 1px;
-  color: #424874;
-  font-weight: bolder;
+  border: #A6B1E1 solid 2px;
+  background-color: #424874;
+  color: #A6B1E1;
 }
 
 .contacto {

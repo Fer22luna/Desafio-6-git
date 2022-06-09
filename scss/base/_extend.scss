@@ -19,16 +19,12 @@ object-fit: contain;
 
 %div-foto{
     width: 100%;
-    height: 150px;
+    height: 17vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
     color: #F4EEFF;
 
-    @media screen and (max-width:600px) {
-        height: 120px;
-        font-size: 20px;
 
-    }
 }

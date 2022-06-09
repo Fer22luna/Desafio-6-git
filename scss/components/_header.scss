@@ -3,10 +3,11 @@ header {
         background-color: nth($colores, 2);
         height: 15vh;
         font-family: "louisCafe";
+        font-weight: bold;
+      text-transform:capitalize;
 
         @media screen and (max-width:576px) {
             height: 12vh;
-
         }
 
         div {
@@ -34,6 +35,12 @@ header {
                     }
                     .nav-link {
                         color: nth($colores , 3) !important;
+
+                        
+                        &:hover{
+                            color: nth($colores, 1 ) !important;
+                            text-shadow: 1px 1px 1px nth($colores, 3 );
+                        }
 
                     }
 
