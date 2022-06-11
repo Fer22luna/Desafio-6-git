@@ -3,16 +3,29 @@
 
 @font-face {
     font-family: "lemonMilk";
-    src: url('../fonts/LEMONMILK-Bold.otf');
+    src: url('../fonts/LEMONMILK-Light.otf');
+    font-display: swap;
 }
+
+@font-face {
+    font-family: "lemonMilkb";
+    src: url('../fonts/LEMONMILK-Bold.otf');
+    font-display: swap;
+
+}
+
 @font-face {
     font-family: "louisCafe";
     src: url('../fonts/louisGeorgeCafeItalic.ttf');
+    font-display: swap;
+
 }
 
 @font-face {
     font-family: "louisCafel";
     src: url('../fonts/louisGeorgeCafeLight.ttf');
+    font-display: swap;
+
 }
 
 * {

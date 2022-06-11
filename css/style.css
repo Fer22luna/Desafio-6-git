@@ -1,15 +1,23 @@
 /* Paleta de colores*/
 @font-face {
   font-family: "lemonMilk";
+  src: url("../fonts/LEMONMILK-Light.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "lemonMilkb";
   src: url("../fonts/LEMONMILK-Bold.otf");
+  font-display: swap;
 }
 @font-face {
   font-family: "louisCafe";
   src: url("../fonts/louisGeorgeCafeItalic.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "louisCafel";
   src: url("../fonts/louisGeorgeCafeLight.ttf");
+  font-display: swap;
 }
 * {
   margin: 0;
@@ -37,14 +45,9 @@ body .grid-contenedor .main-contenedor {
 
 /* Paleta de colores*/
 .main-contenedor .seccion-categoria .todas-categorias a {
-  width: 80%;
+  width: 90%;
   text-decoration: none;
   display: flex;
-}
-@media screen and (max-width: 600px) {
-  .main-contenedor .seccion-categoria .todas-categorias a {
-    width: 90%;
-  }
 }
 
 .main-contenedor .seccion-categoria .todas-categorias a .manga, .main-contenedor .seccion-categoria .todas-categorias a .comics, .main-contenedor .seccion-categoria .todas-categorias a .idiomas, .main-contenedor .seccion-categoria .todas-categorias a .filosofia, .main-contenedor .seccion-categoria .todas-categorias a .argentina, .main-contenedor .seccion-categoria .todas-categorias a .latinoamericana, .main-contenedor .seccion-categoria .todas-categorias a .extranjera {
@@ -124,8 +127,13 @@ main .hero {
   color: #DCD6F7;
   background-attachment: fixed;
 }
+@media screen and (max-width: 576px) {
+  main .hero {
+    height: 80vh;
+  }
+}
 main .hero h1 {
-  font-family: "lemonMilk";
+  font-family: "lemonMilkb";
   font-size: 80px;
   font-weight: bolder;
   text-align: center;
@@ -135,7 +143,7 @@ main .hero h1 {
 main .hero h1:hover {
   transform: scale(1.1);
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
   main .hero h1 {
     font-size: 30px;
   }
@@ -300,9 +308,9 @@ main .compra-venta div h2 {
   font-weight: bold;
   text-align: center;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
   main .compra-venta div h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 main .compra-venta div p {
@@ -312,15 +320,16 @@ main .compra-venta div p {
   text-align: center;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
   main .compra-venta div p {
-    font-size: 28px;
+    font-size: 25px;
   }
 }
 main .compra-venta a {
-  font-family: "louisCafe";
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 28px;
+  text-transform: uppercase;
   color: #424874;
   background-color: #A6B1E1;
   text-decoration: none;
@@ -330,6 +339,11 @@ main .compra-venta a {
   border-radius: 15px;
   border: #DCD6F7 solid 2px;
   transition: all 2s;
+}
+@media screen and (max-width: 576px) {
+  main .compra-venta a {
+    font-size: 22px;
+  }
 }
 main .compra-venta a:hover {
   /*  color: nth($colores , 3);
@@ -399,7 +413,7 @@ main .atencion .todas-atenciones div {
 }
 main .atencion .todas-atenciones div div img {
   width: 40px;
-  height: auto;
+  height: 40px;
 }
 
 .footer-contenedor {
@@ -413,7 +427,7 @@ main .atencion .todas-atenciones div div img {
 }
 .footer-contenedor a .logo {
   width: 40px;
-  height: auto;
+  height: 40px;
   margin-left: 10px;
 }
 .footer-contenedor ul {
@@ -435,7 +449,7 @@ main .atencion .todas-atenciones div div img {
 }
 .footer-contenedor div a img {
   width: 50px;
-  height: auto;
+  height: 50px;
 }
 
 .main-contenedor .seccion-presentacion {
@@ -577,7 +591,7 @@ main .atencion .todas-atenciones div div img {
   padding: 12px 16px 12px 16px;
   margin-top: 15px;
   border-radius: 5px;
-  border: #A6B1E1 solid 1px;
+  border: #A6B1E1 solid 2px;
   text-transform: uppercase;
 }
 @media screen and (max-width: 780px) {
